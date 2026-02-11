@@ -6,10 +6,12 @@ body {
 p {
   padding-left: 15vw;
   padding-right: 15vw;
+  text-indent: 3em;
 }
 
 h2 {
   text-align: center;
+  font-size: 40px;
 }
 
 header {
@@ -17,31 +19,33 @@ header {
   margin: 0;
   padding: 0.5rem;
   background-image: url("img/horses-polonio.jpg");
-  background-size: 100% auto;
+  background-size: 100%;
+  background-size: cover;
   height: 100vh;
 
-  h1 {
-    padding-left: 3vw;
-    font-size: 3vw;
-    color: rgba(43, 42, 42, 0.801);
+  #hero {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: black;
 
-    strong {
-      color: rgba(66, 143, 3, 0.781);
-      text-shadow: 1px 1px 2px #000000;
+    h1 {
+      padding-left: 3vw;
+      font-size: 3vw;
+      color: rgba(43, 42, 42, 0.801);
+
+      strong {
+        color: rgba(66, 143, 3, 0.781);
+        text-shadow: 1px 1px 2px #000000;
+      }
     }
   }
-}
-
-#hero {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  color: black;
 }
 
 nav {
   display: flex;
   justify-content: flex-end;
+  position: sticky;
 
   ul {
     display: flex;
@@ -105,6 +109,8 @@ nav {
   }
 
   p {
+    text-indent: 0;
+    font-size: 0.8vw;
     margin: 0;
     padding: 3%;
     max-height: 10%;
@@ -122,6 +128,8 @@ nav {
     border-radius: 5px;
     max-height: 14%;
     overflow: hidden;
+    display: inline-flex;
+    align-items: center;
   }
 
   button:hover {
