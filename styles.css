@@ -23,7 +23,12 @@ header {
   h1 {
     padding-left: 3vw;
     font-size: 3vw;
-    color: rgba(0, 0, 0, 0.671);
+    color: rgba(43, 42, 42, 0.801);
+
+    strong {
+      color: rgba(66, 143, 3, 0.781);
+      text-shadow: 1px 1px 2px #000000;
+    }
   }
 }
 
@@ -73,7 +78,7 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 2rem;
+  gap: 2vw;
 }
 
 .destination-card:hover {
@@ -88,6 +93,8 @@ nav {
   display: block;
   max-height: 50vh;
   box-shadow: 1px 1px 5px 1px #949494;
+  max-width: 100%;
+  min-width: 0;
 
   img {
     border-top-left-radius: calc(var(--border-radius) * 0.86);
@@ -100,8 +107,10 @@ nav {
   p {
     margin: 0;
     padding: 3%;
-    height: 8%;
+    max-height: 10%;
+    text-overflow: ellipsis;
     overflow: hidden;
+    white-space: nowrap;
   }
 
   button {
@@ -111,13 +120,15 @@ nav {
     background-color: rgba(110, 170, 110, 0.432);
     border: none;
     border-radius: 5px;
-    max-height: 17%;
+    max-height: 14%;
+    overflow: hidden;
   }
 
   button:hover {
     background-color: green;
     border-bottom: white solid 2px;
     color: white;
+    cursor: pointer;
   }
 }
 
