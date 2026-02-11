@@ -21,8 +21,9 @@ header {
   height: 100vh;
 
   h1 {
-    position: absolute;
     padding-left: 3vw;
+    font-size: 3vw;
+    color: rgba(0, 0, 0, 0.671);
   }
 }
 
@@ -81,13 +82,13 @@ nav {
   border-radius: var(--border-radius);
   margin: 10px;
   display: block;
-  max-height: 70vh;
+  height: 50vh;
   box-shadow: 1px 1px 5px 1px #949494;
 
   img {
     border-top-left-radius: calc(var(--border-radius) * 0.86);
     border-top-right-radius: calc(var(--border-radius) * 0.86);
-    max-height: 70%;
+    height: 50%;
     width: 100%;
     object-fit: cover;
   }
@@ -102,7 +103,7 @@ nav {
     padding: 10px 10px;
     text-decoration: none;
     background-color: rgba(110, 170, 110, 0.432);
-    border:none;
+    border: none;
     border-radius: 5px;
   }
 
@@ -113,4 +114,12 @@ nav {
     border: none;
     border-bottom: white solid 2px;
     color: white;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.7vw;
 }
